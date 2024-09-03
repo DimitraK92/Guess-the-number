@@ -12,7 +12,7 @@ def validate_user_input_level(user_input):
 
 def validate_user_input_limit(user_input, limit):
     user_input = validate_user_input_number(user_input)
-    while user_input not in range(1, limit+1):
+    while user_input not in range(1, limit + 1):
         user_input = input(f"Only numbers between 1 and {limit} are allowed. Try again: ")
     return user_input
 

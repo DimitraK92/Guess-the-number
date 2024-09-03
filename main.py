@@ -42,7 +42,7 @@ def play_game():
             print(f"You have {i} attempts remaining to guess the number.")
             user_guess = helper.validate_user_input_limit(input("Guess again: "), limit)
     if not win: print("You run out of guesses, you lose")
-    return helper.validate_user_input_play_again(input("Do you want to play again? (y/n) ")) == 'y'
+    return helper.validate_user_input_play_again(input("Do you want to play again? (y/n): ")) == 'y'
 
 
 def check_user_guess(user_guess, number_to_guess, guess_range):
